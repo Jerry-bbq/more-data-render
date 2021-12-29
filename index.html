@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #container {
+            height: 100vh;
+            overflow: auto;
+        }
+
+        .sunshine {
+            display: flex;
+            padding: 10px;
+        }
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        #btn-group {
+            position: fixed;
+            right: 20px;
+            padding: 20px;
+            background: pink;
+        }
+        .btn-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn-group">
+        <div class="btn-item"><button data-id="common">common</button></div>
+        <div class="btn-item"><button data-id="fragment">fragment</button></div>
+        <div class="btn-item" class="btn-item"><button data-id="setTimeout">setTimeout</button></div>
+        <div class="btn-item"><button data-id="requestAnimationFrame">requestAnimationFrame</button></div>
+        <div class="btn-item"><button data-id="requestAnimationFrameAndFragment">requestAnimationFrameAndFragment</button></div>
+    </div>
+    <div id="container"></div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
